@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>792</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>792</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>파일</string>
+    </property>
+    <addaction name="action_newmake"/>
+    <addaction name="action_newfile"/>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="action_saveas"/>
+    <addaction name="separator"/>
+    <addaction name="action_pagesetting"/>
+    <addaction name="action_printfile"/>
+    <addaction name="separator"/>
+    <addaction name="action_closewin"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>편집</string>
+    </property>
+    <addaction name="action_undo"/>
+    <addaction name="action_cut"/>
+    <addaction name="action_copy"/>
+    <addaction name="action_paste"/>
+    <addaction name="action_delete"/>
+    <addaction name="separator"/>
+    <addaction name="action_search"/>
+    <addaction name="action_find"/>
+    <addaction name="action_nextfind"/>
+    <addaction name="action_change"/>
+    <addaction name="separator"/>
+    <addaction name="action_selectall"/>
+    <addaction name="action_time"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>서식</string>
+    </property>
+    <addaction name="action_font"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>보기</string>
+    </property>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>확대하기/축소하기</string>
+     </property>
+     <addaction name="action_zoom_in"/>
+     <addaction name="action_zoom_out"/>
+     <addaction name="action_zoom_clean"/>
+    </widget>
+    <addaction name="menu_6"/>
+    <addaction name="action_status"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>도움말</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_feedback"/>
+    <addaction name="separator"/>
+    <addaction name="action_info"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>특별기능</string>
+    </property>
+    <addaction name="action_crawling"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_7"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_newmake">
+   <property name="text">
+    <string>새로 만들기</string>
+   </property>
+  </action>
+  <action name="action_newfile">
+   <property name="text">
+    <string>새창</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>열기</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>저장</string>
+   </property>
+  </action>
+  <action name="action_saveas">
+   <property name="text">
+    <string>다른 이름으로 저장</string>
+   </property>
+  </action>
+  <action name="action_pagesetting">
+   <property name="text">
+    <string>페이지 설정</string>
+   </property>
+  </action>
+  <action name="action_printfile">
+   <property name="text">
+    <string>인쇄</string>
+   </property>
+  </action>
+  <action name="action_closewin">
+   <property name="text">
+    <string>끝내기</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="text">
+    <string>실행취소</string>
+   </property>
+  </action>
+  <action name="action_cut">
+   <property name="text">
+    <string>잘래내기</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="text">
+    <string>복사</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="text">
+    <string>붙여넣기</string>
+   </property>
+  </action>
+  <action name="action_delete">
+   <property name="text">
+    <string>삭제</string>
+   </property>
+  </action>
+  <action name="action_search">
+   <property name="text">
+    <string>네이버로 검색</string>
+   </property>
+  </action>
+  <action name="action_find">
+   <property name="text">
+    <string>찾기</string>
+   </property>
+  </action>
+  <action name="action_nextfind">
+   <property name="text">
+    <string>다음 찾기</string>
+   </property>
+  </action>
+  <action name="action_nextfind2">
+   <property name="text">
+    <string>이전 찾기</string>
+   </property>
+  </action>
+  <action name="action_change">
+   <property name="text">
+    <string>바꾸기</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>이동</string>
+   </property>
+  </action>
+  <action name="action_selectall">
+   <property name="text">
+    <string>모두 선택</string>
+   </property>
+  </action>
+  <action name="action_time">
+   <property name="text">
+    <string>날짜/시간</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>자동 줄 바꿈</string>
+   </property>
+  </action>
+  <action name="action_font">
+   <property name="text">
+    <string>글꼴</string>
+   </property>
+  </action>
+  <action name="action_zoom_in">
+   <property name="text">
+    <string>확대</string>
+   </property>
+  </action>
+  <action name="action_zoom_out">
+   <property name="text">
+    <string>축소</string>
+   </property>
+  </action>
+  <action name="action_zoom_clean">
+   <property name="text">
+    <string>확대하기/축소하기 기본값 복원</string>
+   </property>
+  </action>
+  <action name="action_status">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>상태 표시줄</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>도움말 보기</string>
+   </property>
+  </action>
+  <action name="action_feedback">
+   <property name="text">
+    <string>피드백 보내기</string>
+   </property>
+  </action>
+  <action name="action_info">
+   <property name="text">
+    <string>메모장 정보</string>
+   </property>
+  </action>
+  <action name="action_crawling">
+   <property name="text">
+    <string>크롤링</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
